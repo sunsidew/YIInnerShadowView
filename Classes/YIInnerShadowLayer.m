@@ -20,15 +20,15 @@
         self.shouldRasterize = YES;
         
         // Standard shadow stuff
-        [self setShadowColor:[[UIColor colorWithWhite:0 alpha:1] CGColor]];
+        [self setShadowColor:[[UIColor colorWithWhite:0 alpha:0.6] CGColor]];
         [self setShadowOffset:CGSizeMake(0.0f, 0.0f)];
         [self setShadowOpacity:1.0f];
-        [self setShadowRadius:5];
+        [self setShadowRadius:3];
         
         // Causes the inner region in this example to NOT be filled.
         [self setFillRule:kCAFillRuleEvenOdd];
         
-        self.shadowMask = YIInnerShadowMaskAll;
+        self.shadowMask = YIInnerShadowMaskHorizontal;
         
     }
     return self;
